@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MY|SERVICES</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="css/services.css">
+<style type="text/css">
+body{background-color:#fff;
+font-size:20px;}
+
+.one{width:;height:100%;
+margin:0px 100px 0px 100px;
+background-color:#fff;}
+
+.intro{width:;height:100%;
+margin:0px 100px 0px 100px;
+background-color:#eeeeee;
+}
+
+<!--2 equal colmns -->
+
+ .flex-container{
+
+        width: 80%;
+
+        min-height: 300px;
+
+        margin: 0 auto;
+
+        display: -webkit-flex; <!--Safari-->     
+
+        display: flex; <!--Standard syntax-->
+
+    }
+
+    .flex-container .column{
+
+        padding: 10px;
+
+        background: #dbdfe5;
+
+        -webkit-flex: 1;<!--Safari-->
+
+        -ms-flex: 1;<!--IE 10-->
+
+        flex: 1;<!--Standard syntax-->
+
+    }
+
+    .flex-container .column.bg-alt{
+
+        background: #b4bac0;
+
+    }
+	
+
+	
+	
+	
+	
+	<!--navbar n search-box-->
+	 .form-inline {
+        display: inline-block;
+    }
+	.navbar-header.col {
+		padding: 0 !important;
+	}	
+	.navbar {
+		font-size: 14px;
+		background: #474242;
+		padding-left: 16px;
+		padding-right: 16px;
+		border-bottom: 1px solid #d6d6d6;
+		border-bottom: 2px solid #66cc99;
+		box-shadow: 0 0 4px rgba(0,0,0,.1);			
+	}
+	
+	.navbar .ul .li a{color:#fff;}
+	.navbar .navbar-brand {
+		color: #dbdfe5;
+		padding-left: 0;
+		font-size: 20px;
+		padding-right: 50px;
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+	}
+	.navbar .navbar-brand b {
+		font-weight: bold;
+		color: #f04f01;
+		background:#dbdfe5;
+		border-radius:0px 8px 8px 0px;
+		border-bottom:2px solid #66cc99;
+		font-family:georgian;
+	}
+	
+	.col .navbar-brand {
+		color: #dbdfe5;
+		padding-left: 0;
+		font-size: 35px;
+		padding-right: 50px;
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+	}
+	.col .navbar-brand b {
+		font-weight: bold;
+		color: #f04f01;
+		background:#dbdfe5;
+		border-radius:0px 8px 8px 0px;
+		border-bottom:2px solid #66cc99;
+		font-family:georgian;
+	}
+	
+	
+	.navbar ul.nav li {
+		font-size: 96%;
+		font-weight: bold;		
+		text-transform: uppercase;
+		color:#fff;
+	}
+	.navbar ul.nav li.active a, .navbar ul.nav li.active a:hover, .navbar ul.nav li.active a:focus {
+		color: #f04f01 !important;
+		background: transparent !important;
+	}
+	.search-box {
+        position: relative;
+    }
+	.search-box input.form-control, .search-box .btn {
+		font-size: 14px;
+		border-radius: 2px !important;
+	}
+	.search-box .input-group-btn {
+		padding-left: 4px;		
+	}
+	.search-box input.form-control:focus {
+		border-color: #f04f01;
+		box-shadow: 0 0 8px rgba(240,79,1,0.2);
+	}
+	.search-box .btn-primary, .search-box .btn-primary:active {
+		font-weight: bold;
+		background: #f04f01;
+		border-color: #f04f01;
+		text-transform: uppercase;
+		min-width: 90px;
+	}
+	
+	
+	.search-box .btn-primary:focus {
+		outline: none;
+		background: #eb4e01;
+		box-shadow: 0 0 8px rgba(240,79,1,0.2);
+	}
+	.search-box .btn span {
+		transform: scale(0.9);
+		display: inline-block;
+	}
+	.navbar .nav-item i {
+		font-size: 18px;
+	}
+	.navbar .dropdown-item i {
+		font-size: 16px;
+		min-width: 22px;
+	}
+	.navbar .nav-item.open > a {
+		background: none !important;
+	}
+	.navbar .dropdown-menu {
+		border-radius: 20px;
+		border-color: #e5e5e5;
+		border-bottom:4px solid #555;
+		box-shadow: 0 2px 8px rgba(0,0,0,.05);
+	}
+	.navbar .dropdown-menu li a {
+		color: #777;
+		padding: 8px 20px;
+		line-height: normal;
+		font-size: 14px;
+	}
+	.navbar .dropdown-menu li a:hover, .navbar .dropdown-menu li a:active {
+		color: #333;
+		border-radius:20px;
+		border-bottom:2px solid #f04f01;
+	}
+	.navbar .navbar-form {
+		border: none;
+	}
+	@media (min-width: 992px){
+		.form-inline .input-group .form-control {
+			width: 225px;			
+		}
+	}
+	@media (max-width: 992px){
+		.form-inline {
+			display: block;
+		}
+	}
+	
+	
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-expand-lg navbar-light">
+	<div class="navbar-header d-flex col">
+		<a class="navbar-brand" href="index.html">SPELL<b>CASTER</b></a>  		
+		<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
+			<span class="navbar-toggler-icon"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<!-- Collection of nav links, forms, and other content for toggling -->
+	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+		<ul class="nav navbar-nav">
+			<li class="nav-item"class="active"><a href="index.html" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+		</ul>
+		
+		<!--search-box-->
+		<form class="navbar-form form-inline navbar-right ml-auto">
+			<div class="input-group search-box">
+				<input type="text" class="form-control">
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-primary"><span>Search</span></button>
+				</span>
+			</div>
+		</form>		
+	</div>
+</nav>
+
+
+
+<div class="intro">
+
+
+
+
+
+<!-- first 2 columns-->
+
+<div class="flex-container">
+
+            <div class="column">Column 1</div>
+
+            <div class="column bg-alt">Column 2</div>
+
+        </div>
+
+<br>
+
+  
+	  <!-- 2nd 3 columns-->
+<p>Make the columns match the height of the tallest column.</p>
+
+<div class="col-container">
+  <div class="col">
+    <h2>Column 1</h2>
+    <p>please</p>
+	<p>indent</p>
+  </div>
+
+  <div class="col">
+    <h2>Column 2</h2>
+    <p>cat!</p>
+    <p>mouse</p>
+    <p>people!</p>
+    <p>contents</p>
+  </div>
+
+  <div class="col">
+    <h2>Column 3</h2>
+    <p>frames</p>
+    <p>iframes</p>
+  </div>
+</div>
+
+<br>
+
+
+<!--auto multi column -->
+ <div class = "multi">
+         Tutorials Point originated from the idea that there exists a class 
+         of readers who respond better to online content and prefer to learn 
+         new skills at their own pace from the comforts of their drawing rooms.
+         The journey commenced with a single tutorial on HTML in 2006 and elated 
+         by the response it generated, we worked our way to adding fresh tutorials
+         to our repository which now proudly flaunts a wealth of tutorials and 
+         allied articles on topics ranging from programming languages to web 
+         designing to academics and much more.
+      </div>
+	  
+	  
+	
+
+
+
+
+</div>
+
+<!--footers -->
+
+<div class="footer1">Is this website helpful to you? Please give me a like, or share your feedback to help me improve. Connect with me on Facebook and Twitter for the latest updates.</div>
+	  
+<div class="footer2">
+
+  <div class="col-container">
+  <div class="col">
+    <h2 style="font-style:italic;">About</h2>
+	<p>Locations</p>
+	<p>Offices</p>
+    <p>What i do</p>
+	<p></p>
+  </div>
+
+  <div class="col" style="background:">
+    <h2 style="font-style:italic;">Contact</h2>
+    <p>Telephones</p>
+    <p>Emails</p>
+    <p>Other platforms </p>
+    <p></p>
+  </div>
+  <div class="col">
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+
+  <div class="col">
+    
+    <a class="navbar-brand" href="index.html">SPELL<b>CASTER</b></a>
+    
+  </div>
+</div>
+
+  
+</div>
+<div class="footer3">Copyright © 2019 SpellCaster.All Rights Reserved</div>
+
+  
+
+
+
+
+
+</body>
+</html>
